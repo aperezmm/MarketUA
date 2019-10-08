@@ -1,0 +1,35 @@
+
+/*ELEMENTOS ---------------*/
+
+
+
+/*CLASES ------------------*/
+.section{
+    top: 100px;
+}
+
+.pestaña{
+   text-align: center;
+   cursor: pointer;
+   flex-direction: row;
+   justify-content: space-evenly;
+   padding: 15px;
+   color: black;
+}
+
+.pestaña span{
+    font-family: serif;
+    font-size: 3ch;
+}
+
+/*IDS  -----------------------*/
+
+#remover{
+cursor: pointer;
+}
+
+#item{
+    font-size: 0.8ch;
+}
+
+

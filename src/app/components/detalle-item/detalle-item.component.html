@@ -1,0 +1,23 @@
+<div class="container section">
+  <div class="row">
+    <div class="col-lg-4 carou">
+      <ngb-carousel *ngFor="let img of images">
+        <ng-template ngbSlide>
+          <div class="picsum-img">
+            <img src="{{img.url}}" style="max-width: 90%; max-height: 60%;">
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+    <div class="col-lg-4 description">
+   <h2>{{item.title}}</h2>
+   <p>{{item.descriptions[0].id}}</p>
+   <p class="price">{{item.price | currency:"COP":"symbol-narrow"}}</p>
+   <p><span>Sold Units:</span> {{item.sold_quantity}}</p>
+   <button (click)="agregarCarrito()" type="button" class="btn btn-default cart">Añadir al carrito</button>
+    </div>
+    <div class="col-lg-4">
+      <app-carrito [itemsCarrito]="carrito" [tablaOn]="tablaOn"></app-carrito>
+    </div>
+  </div>
+</div>

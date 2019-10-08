@@ -1,0 +1,25 @@
+<div class="container">
+   <h1><span class="badge badge-pill badge-success">PRODUCTOS EN EL CARRITO</span></h1> 
+    <div class="section">
+      <div class="row">
+        <div class="column" *ngFor="let item of carrito">
+            <div class="card border-primary mb-3 contenido" style="max-width: 300px; max-height: 300px;">
+                <div class="card-body">
+                <h5 class="card-title">{{item.item}}</h5>
+                <div class="card-body">
+                  <img src="{{item.img}}"  alt="..." style="width: 50%; height: 50%;">
+                  <p class="card-text precio" style="padding-top: 15px">{{item.Cost | currency:"COP":"symbol-narrow"}}</p><br>
+                  <div class="card-footer">
+                  <a type="button" class="card-link" (click)="onSelected(item)" >Detalles>></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+        <app-carrito [itemsCarrito]="carrito" [tablaOn]="tablaOn"></app-carrito>
+    </div>
+  

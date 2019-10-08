@@ -1,0 +1,21 @@
+<div class="container section">
+  <div class="pestaña">
+    <a (click)="tablaOn=!tablaOn" id='carritoButton'class="list-group-item list-group-item-action list-group-item-primary"><i class="fas fa-shopping-cart"></i></a>
+  </div>
+  <table *ngIf="tablaOn" class="table table-dark table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Costo</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let item of itemsCarrito" class="table-active">
+        <th id="item" scope="row">{{item.item}}</th>
+        <th>{{item.cost | currency:"COP":"symbol-narrow"}}</th>
+        <td><a id="remover" (click)="remove(item)"><i class="far fa-trash-alt"></i></a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

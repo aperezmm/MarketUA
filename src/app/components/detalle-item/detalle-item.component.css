@@ -1,0 +1,43 @@
+#agregaCarrito{
+    cursor: pointer;
+}
+
+.card-action{
+    padding-top: 5px;
+    text-align: center;
+}
+
+.cart{
+    background: #FE980F;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.description{
+    margin-top: 50px;
+}
+
+.price{
+    color: blueviolet;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.description h2{
+    color: #555;
+}
+
+.carou{
+    margin-top: 50px;
+}
+
+.carrito{
+    position: relative;
+    top: 70px;
+}
+
