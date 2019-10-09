@@ -50,7 +50,7 @@ export class ContenidoComponent implements OnInit {
   }
 
   obtenerCategorias() {
-    this.categoriaService.categories().subscribe(resultado => {
+    this.categoriaService.categories().subscribe(resultado => { 
       this.categorias = resultado;
     });
   }

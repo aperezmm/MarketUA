@@ -1,4 +1,4 @@
 export class Categoria{
-    category:String;
-    id:String;
+    id?:String;
+    name?:String;
 }
