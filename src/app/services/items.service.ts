@@ -20,4 +20,8 @@ export class ItemsService {
     return this.http.get(this.API+ "/items/" + id);
   }
 
+  getItemByCategory(idCategory: string) {
+    return this.http.get(this.API + "/sites/MCO/search?category=" + idCategory);
+  }
+
  }

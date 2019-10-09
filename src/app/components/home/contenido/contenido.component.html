@@ -5,8 +5,8 @@
     <div class="col-md-8">
       <form #filtro="ngForm">
         <div>
-        <select placeholder="Categoria" name="categories" >
-          <option>xx</option>
+        <select [(ngModel)]="categoriaSeleccionada" placeholder="Categoria" (change)="filtrarPorCategoria()" name="categories" >
+          <option *ngFor="let categoria of categorias" value="{{categoria.id}}">{{categoria.name}}</option>
         </select>
         </div>
         <div></div>
