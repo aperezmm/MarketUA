@@ -9,7 +9,8 @@ import { Categoria } from '../interfaces/categoria';
 })
 
 export class CategoriaService{
-    public API = 'https://api.mercadolibre.com/sites/MCO/categories';
+   // public API = 'https://api.mercadolibre.com/sites/MCO/categories';
+    public API = 'https://marketuaflask.herokuapp.com/categories'
 
     constructor(private http: HttpClient){
 
